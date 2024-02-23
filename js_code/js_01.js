@@ -8,6 +8,6 @@ accountCity="kolkata"
 
 accountEmail="mallick@gmail.com"
 accountPassword="123456"
-
+let accountState;
 console.log(accountId)
-console.table([accountId,accountEmail, accountPassword,accountCity]);
+console.table([accountId,accountEmail, accountPassword,accountCity,accountState]);
