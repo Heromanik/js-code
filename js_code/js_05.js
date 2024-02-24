@@ -28,3 +28,21 @@ console.log(typeof myFunction);
 console.log(typeof myobj);
 console.log(typeof arrayy);
 console.log(typeof id);// its return symbol as type
+
+// ++++++++++++++  MEMORY  +++++++++++++++++++++++++++
+
+//Stack(Primitive ), Heap(Non-Primitive)
+let var1="manikmallick"
+let var2=var1
+var2="yoo"
+console.log(var2)
+console.log(var1);
+
+let userOne={
+    email:"manik@gmail.com",
+    upi:"ma@ybl",
+}
+let userTwo=userOne
+userTwo.email="mallick@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
