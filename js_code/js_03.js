@@ -22,7 +22,22 @@ let isLoggedIn2="manik" //return true
 let isLoggedIn3=1 // return true
 let booleanLoggedIn=Boolean (isLoggedIn2)
 //console.log(booleanLoggedIn) 
-console.log(booleanLoggedIn)  
+//console.log(booleanLoggedIn)  
 //1=true ,0=false
 //"manik"=true, ""=false
  
+// operations
+let value =3
+let negvalue=-value
+//console.log(negvalue)
+let str1="hello"
+let str2=" manik"
+let str3=str1+str2
+console.log(str3);
+console.log(2+"1");
+console.log("2"+1); 
+console.log("1"+2+2)
+console.log(1+ 1+"2");
+console.log(true); //returns true
+console.log(+true);// returns 1
+//console.log(true+);// its give an error
