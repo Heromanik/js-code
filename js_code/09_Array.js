@@ -25,13 +25,57 @@ myArr.unshift(9)
 
 //SLICE , SPLICE
 
-console.log("A",myArr);
+// console.log("A",myArr);
 
-const myn1=myArr.slice(0,4)//[ 0, 1, 2, 3 ]
-console.log(myn1);
+// const myn1=myArr.slice(0,4)//[ 0, 1, 2, 3 ]
+// console.log(myn1);
 
-console.log("B",myArr);
+// console.log("B",myArr);
 
-const myn2=myArr.splice(1,3)// [ 0, 4, 5 ] remove 1,2,3 position values
-console.log("C",myArr);//C [ 0, 4, 5 ]
-console.log(myn2); // [ 1, 2, 3 ] also main array is changed after splice method only print non remove elements in splice method
+// const myn2=myArr.splice(1,3)// [ 0, 4, 5 ] remove 1,2,3 position values
+// console.log("C",myArr);//C [ 0, 4, 5 ]
+// console.log(myn2); // [ 1, 2, 3 ] also main array is changed after splice method only print non remove elements in splice method
+
+const hero1=["thor", "Ironman","Spiderman"]
+const hero2=["superman","flash","batman"]
+
+// hero1.push(hero2) // here hero2 array push into as a array and hero1 array index increases by 1.
+// console.log(hero1); // return [ 'thor', 'Ironman', 'Spiderman', [ 'superman', 'flash', 'batman' ] ]
+
+// console.log(hero1[3]); //[ 'superman', 'flash', 'batman' ]
+
+// we can use concat for merging two array into a new array.
+
+const allhero=hero1.concat(hero2) //[ 'thor', 'Ironman', 'Spiderman', 'superman', 'flash', 'batman' ]
+// console.log(allhero);
+
+// another way using spread operator.
+
+const allnewhero=[...hero1,...hero2]
+// console.log(allnewhero); //[ 'thor', 'Ironman', 'Spiderman', 'superman', 'flash', 'batman' ], no limitations
+
+const another_array=[1,2,3,[4,5,6],7,[6,7,[4,5]]]
+const real_another_array=another_array.flat(Infinity) //using infinity its flat in last depth
+console.log(real_another_array);
+//1=>[ 1, 2, 3, 4, 5, 6, 7, 6, 7, [ 4, 5 ] ]
+//2=>[
+  1, 2, 3, 4, 5,
+  6, 7, 6, 7, 4,
+  5
+//]
+
+
+
+console.log(Array.isArray("manik"));
+console.log(Array.from("manik"));// from -> Creates an array from an array-like object.
+console.log(Array.from({name:"manik"})); //interesting
+
+let score1=100
+
+let score2 
+
+
+
+
+
+
