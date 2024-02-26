@@ -77,7 +77,38 @@ const obj3={obj1,obj2}
     obj1: { '1': 'a', '2': 'b', '3': 'c', '4': 'd' },
   obj2: { '3': 'c', '4': 'd' }
   }*/
-const obj4=Object.assign(obj1,obj2)//{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+const obj4=Object.assign({},obj1,obj2)//{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+//{} its consider as a target and rest of is as a source object
 
+const obj5={...obj1,...obj2} // most uses spread operator
 console.log(obj3);
-//console.log(obj4);
+console.log(obj4);
+console.log(obj5);
+
+const user=[
+    {
+        id:1,
+        name:"manik"
+    },
+    {
+        id:2,
+        name:"manik"
+    },
+    {
+        id:3,
+        name:"manik"
+    }
+]
+
+console.log(user[0]);
+
+console.log(tinderUser);
+console.log(Object.keys(tinderUser)); // here object.keys is used for print of all variables or keys name 
+//into the tinder object and also its treat as an array e.g [ 'id', 'name', 'isLogIn' ]
+
+console.log(Object.values(tinderUser)); // it return all values of an object e.g [ '12345', 'manik', false ]
+
+console.log(Object.entries(tinderUser));//[ [ 'id', '12345' ], [ 'name', 'manik' ], [ 'isLogIn', false ] ]
+// it shows each keys and values in an one array 
+
+console.log(tinderUser.hasOwnProperty('name')); // return true
