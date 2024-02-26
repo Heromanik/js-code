@@ -23,3 +23,45 @@ const result=addTwoNumbers(3,5)
 //console.log("Result:",result);
 
 
+function loginUserMessage(username="manik") {
+        if(username===undefined){
+            console.log("please enter a username");
+            return
+        }
+    return `${username} just logged in`
+    
+}
+//console.log(loginUserMessage("manik")); //manik just logged in
+//console.log(loginUserMessage("")); //just logged in
+//console.log(loginUserMessage()); //undefined just logged in
+
+
+//shoping card
+
+function calculateCardPrice(...num1) { //...-> rest operator or spread operator
+    return num1
+}
+console.log(calculateCardPrice(200,300,400)); //[ 200, 300, 400 ]
+
+function calculateCardPrice1(val1,val2,...num2) { //...-> rest operator or spread operator
+    return num2
+}
+console.log(calculateCardPrice1(200,300,400,2000));//[ 400, 2000 ]
+
+const user={
+    username:"manik",
+    price:199
+}
+function handleObject(anyobjects) {
+    console.log(`Username is ${anyobjects.username} and Price is ${anyobjects.price}`);
+}
+//handleObject(user) //Username is manik and Price is 199
+
+handleObject({  //Username is manik and Price is 399
+username:"manik",
+price:399
+})
+
+
+
+
