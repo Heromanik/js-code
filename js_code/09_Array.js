@@ -56,7 +56,7 @@ const allnewhero=[...hero1,...hero2]
 
 const another_array=[1,2,3,[4,5,6],7,[6,7,[4,5]]]
 const real_another_array=another_array.flat(Infinity) //using infinity its flat in last depth
-console.log(real_another_array);
+// console.log(real_another_array);
 //1=>[ 1, 2, 3, 4, 5, 6, 7, 6, 7, [ 4, 5 ] ]
 //2=>[
   1, 2, 3, 4, 5,
@@ -66,13 +66,17 @@ console.log(real_another_array);
 
 
 
-console.log(Array.isArray("manik"));
-console.log(Array.from("manik"));// from -> Creates an array from an array-like object.
-console.log(Array.from({name:"manik"})); //interesting
+// console.log(Array.isArray("manik"));
+// console.log(Array.from("manik"));// from -> Creates an array from an array-like object.
+// console.log(Array.from({name:"manik"})); //interesting
 
 let score1=100
+let score2 =300
+let score3=200
 
-let score2 
+console.log(Array.of(score1,score2,score3));//Returns a new array from a set of elements.
+
+
 
 
 
