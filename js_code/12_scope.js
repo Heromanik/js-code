@@ -8,4 +8,18 @@ const c=30 //// this const variable cannot access outside the if scope
 
 //console.log(a); // error
 //console.log(c); //error
-console.log(b); //not an error 30
+//console.log(b); //not an error 30
+
+function one() {
+    const username="manik"
+    function two() {
+        const website="youtube"
+        console.log(username);
+        
+    }
+   // console.log(website); // can't access website outside the function scope
+
+    two()
+    
+}
+one()
