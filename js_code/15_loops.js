@@ -160,7 +160,7 @@ c++ 4 [ 'js', 'ruby', 'python', 'java', 'c++' ]
  ]
 
  mycoding.forEach((item)=>{
-    console.log(item.languagename);
+    //console.log(item.languagename);
  })
 
  /**
@@ -168,3 +168,126 @@ c++ 4 [ 'js', 'ruby', 'python', 'java', 'c++' ]
 java
 c++
   */
+
+// const values=coding.forEach((item)=>{
+//     console.log(item);
+// })
+// console.log(values); // return undefined because forEach loop dont return anything
+
+
+//filter
+const myNums=[1,2,3,4,5,6,7,8,9,10]
+
+//const newNums=myNums.filter((num) => num>4 )
+
+// const newNums=myNums.filter((num) => {
+//     return num>4     //use return keyword when we are use {}
+// })
+
+const newNums=[]
+
+// myNums.forEach((num) =>{
+//     if(num>4){
+//         newNums.push(num)
+//     }
+// })
+
+
+// console.log(newNums); //[ 5, 6, 7, 8, 9, 10 ]
+
+
+
+const books=[
+
+{title:'b1',genre:'fiction',publish:1981},
+{title:'b2',genre:'non-fiction',publish:2011},
+{title:'b3',genre:'history',publish:1981},
+{title:'b4',genre:'comedy',publish:2001},
+{title:'b5',genre:'history',publish:1981}
+];
+
+//const userbooks=books.filter((bk) => bk.genre==='history')
+
+//const userbooks=books.filter((bk) => bk.publish>=2000)
+
+const userbooks=books.filter((bk) => bk.publish>=2000 && bk.publish<=2005)
+
+
+//console.log(userbooks);
+/*[
+    { title: 'b3', genre: 'history', publish: 1981 },
+    { title: 'b5', genre: 'history', publish: 1981 }
+  ]
+
+  [
+  { title: 'b2', genre: 'non-fiction', publish: 2011 },
+  { title: 'b4', genre: 'comedy', publish: 2001 }
+]
+  */
+
+//chaining -> when we are using multiple methods same time
+
+const myNumbers=[1,2,3,4,5,6,7,8,9,10]
+
+const newNum=myNumbers
+                .map((num ) => num*10)
+                .map((num) =>num+1)
+                .map((num) =>num+1)
+                .filter((num)=> num>40)
+ //console.log(newNum);
+
+
+ /**
+  
+ [
+  12, 22, 32, 42,  52,
+  62, 72, 82, 92, 102
+]
+
+[
+  42, 52,  62, 72,
+  82, 92, 102
+]
+  */
+
+//reduce
+
+const NUM1=[1,2,3]
+
+// const myTotal= NUM1.reduce(function (acc,curval) {
+//     console.log(`acc: ${acc} and curval: ${curval}`);
+//     return acc+curval
+// },0)
+
+const myTotal=NUM1.reduce((acc,curval) => acc+curval,0)
+console.log(myTotal);
+/**
+acc: 0 and curval: 1
+acc: 1 and curval: 2
+acc: 3 and curval: 3
+6
+ */
+const shoppingCart=[
+
+    {
+        itemname:"js",
+        price:2999
+    },
+
+    {
+        itemname:"python",
+        price:5999
+    },
+    {
+        itemname:"mobile dev",
+        price:9999
+    },
+
+
+
+]
+
+
+const priceToPay= shoppingCart.reduce((acc,item) => acc+item.price,0)
+
+console.log(priceToPay);
