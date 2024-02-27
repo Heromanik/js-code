@@ -96,10 +96,10 @@ const user={
 
 // arrow function
 
-const chai =() =>{
-    let username="manik"
-    console.log(this.username); // same output as normal function gives
-}
+// const chai =() =>{
+//     let username="manik"
+//     console.log(this.username); // same output as normal function gives
+// }
 //chai()
 
 
@@ -109,6 +109,22 @@ const chai =() =>{
 
 //const addTwoNumber=(num1,num2)=> num1 + num2 // for single line dont need to return keyword and curly braces
 //const addTwoNumber=(num1,num2)=> (num1 + num2) 
-const addTwoNumber=(num1,num2)=> ({username:"manik"}) // for object used ()
+// const addTwoNumber=(num1,num2)=> ({username:"manik"}) // for object used ()
 
-console.log(addTwoNumber(3,5));
+//console.log(addTwoNumber(3,5));
+
+
+
+//Immediately Invoked Function Expressions (IIFE)
+// used for 1st access of a function and remove global scope polution 
+
+// (function chai1() { // named IIFE
+//     console.log(`DB CONNECTED`)
+    
+// })();
+// ((name) => {
+//     console.log(`DB CONNECTED AGAIN ${name}`);
+// })('manik')
+//()() -> first one is used for function defination and 2nd one is execution of the function
+
+
