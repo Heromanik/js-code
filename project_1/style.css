@@ -1,4 +1,46 @@
 body{
-    background-color: aquamarine;
-    text-align:right;
+    /* background-color: aquamarine; */
+    text-align:left;
+}
+h1{
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 50px;
+    text-transform: none;
+    background-color: white;
+    display: inline;
+    position: sticky;
+}
+div.name{
+    line-height: 50px;
+    /* width: 1px; */
+}
+
+div.red{
+    background-color: red;
+    display: inline;
+     padding: 20px;   
+      /* margin-right: 90%; */ 
+}
+div.green{
+    background-color: green;
+    display: inline;
+    padding: 20px; 
+}
+div.blue{
+    background-color: blue;
+    display: inline;
+    padding: 20px; 
+}
+div.yellow{
+    background-color: yellow;
+    display: inline;
+    padding: 20px; 
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
 }
